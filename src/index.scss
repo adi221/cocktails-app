@@ -1,13 +1,79 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Raleway:300,400&display=swap');
+
+/* Colors */
+$primary-clr: #ffe17e;
+$primary-clr-hover: #ffe17eb9;
+$secondry-clr: #2a2428;
+$white-clr: #f4f4f4;
+$hover-clr: #2a2428;
+/* Gradient Background Colors*/
+$primary-clr--gradient: radial-gradient(
+  circle,
+  #ffe17e,
+  #fbdd7c,
+  #f6d979,
+  #f2d677,
+  #eed275
+);
+$secondry-clr--gradient: radial-gradient(
+  circle,
+  #2a2428,
+  #272225,
+  #242023,
+  #221e20,
+  #1f1c1e
+);
+/* Fonts */
+$primary-fn: 'Bree Serif', serif;
+$secondary-fn: 'Raleway', sans-serif;
+/* Font weight */
+$bold-fn: bold;
+$light-fn: light;
+
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: $secondary-fn;
+  font-size: 1.1rem;
+  overflow-x: hidden;
+  width: 100%;
+  background: radial-gradient(
+    circle,
+    #ffffff,
+    #fdfdfd,
+    #fbfbfb,
+    #f9f9f9,
+    #f7f7f7,
+    #f6f6f6,
+    #f5f5f5,
+    #f4f4f4,
+    #f4f4f4,
+    #f3f3f3,
+    #f3f3f3,
+    #f2f2f2
+  );
+}
+
+a {
+  color: $white-clr;
+}
+a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  border: none;
+  color: $white-clr;
+}
+
+p {
+  font-size: 1.15rem;
+  line-height: 1.5;
 }

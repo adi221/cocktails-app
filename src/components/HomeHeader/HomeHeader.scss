@@ -1,0 +1,91 @@
+@import '../../index.scss';
+
+.home-header {
+  padding: 80px;
+
+  &__circle {
+    position: relative;
+    background-color: $primary-clr;
+    height: 340px;
+    width: 340px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 14px solid $secondary-clr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.4em;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 50%;
+      top: 50%;
+      left: -65%;
+      padding: 1px 0;
+      background-color: $primary-clr;
+      box-shadow: 1px 0.5px 0.5px #000000d4;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 50%;
+      top: 50%;
+      right: -65%;
+      padding: 1px 0;
+      background-color: $primary-clr;
+      box-shadow: 1px 0.5px 0.5px #000000d4;
+    }
+    &-title {
+      z-index: 5;
+      color: $white-clr;
+      font-family: $primary-fn;
+      font-size: 4.9rem;
+      font-weight: bold;
+      font-style: italic;
+      text-shadow: -4px 9px 6px $secondary-clr;
+      transform: rotate(-6deg);
+      margin-bottom: 1.4em;
+      margin-right: 0.3em;
+    }
+    img {
+      position: absolute;
+      width: 130px;
+      bottom: -2px;
+      left: 55%;
+      transform: translateX(-55%);
+      filter: drop-shadow(0px 8px 4px black);
+    }
+  }
+
+  &__liqours-container {
+    margin: 4rem auto 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 200px;
+      margin: 1rem 2rem;
+      filter: drop-shadow(2px 4px 6px black);
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        opacity: 0.85;
+        transform: scale(1.05);
+      }
+    }
+
+    p {
+      font-size: 1.35rem;
+      font-weight: bold;
+      font-family: $primary-fn;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      color: #000;
+      text-align: center;
+    }
+  }
+}

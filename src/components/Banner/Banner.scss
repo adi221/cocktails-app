@@ -1,0 +1,42 @@
+@import '../../index.scss';
+
+.banner {
+  background-color: #ffe17e;
+  background-image: url('https://www.transparenttextures.com/patterns/diagonal-striped-brick.png');
+  width: 100%;
+
+  &__container {
+    position: relative;
+
+    img {
+      display: block;
+      width: 330px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $white-clr;
+      font-size: 1.6rem;
+      font-weight: bold;
+      font-family: $primary-fn;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    &__container {
+      img {
+        width: 350px;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

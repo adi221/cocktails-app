@@ -1,0 +1,13 @@
+@import '../../index.scss';
+
+.popular-drinks {
+  &__container {
+    margin: 3rem auto;
+    width: 1170px;
+    max-width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

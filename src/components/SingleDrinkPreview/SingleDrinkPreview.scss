@@ -1,0 +1,26 @@
+@import '../../index.scss';
+
+.single-drink {
+  img {
+    height: 200px;
+    width: 200px;
+    transition: opacity, transform 0.3s ease-in-out;
+    filter: drop-shadow(2px 4px 6px black);
+    margin: 1rem 2rem;
+
+    &:hover {
+      opacity: 0.85;
+      transform: scale(1.05);
+    }
+  }
+
+  p {
+    font-size: 1.35rem;
+    font-weight: bold;
+    font-family: $primary-fn;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #000;
+    text-align: center;
+  }
+}

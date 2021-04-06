@@ -1,6 +1,6 @@
 import SingleDrink from './SingleDrink/SingleDrink';
 import Drinks from './Drinks/Drinks';
 import Home from './Home/Home';
-import Ingredients from './Ingredients/Ingredients';
+import SingleIngredient from './SingleIngredient/SingleIngredient';
 
-export { SingleDrink, Drinks, Home, Ingredients };
+export { SingleDrink, Drinks, Home, SingleIngredient };

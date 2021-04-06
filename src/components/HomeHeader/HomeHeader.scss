@@ -1,7 +1,7 @@
 @import '../../index.scss';
 
 .home-header {
-  padding: 80px;
+  padding: 100px;
 
   &__circle {
     position: relative;
@@ -56,36 +56,6 @@
       left: 55%;
       transform: translateX(-55%);
       filter: drop-shadow(0px 8px 4px black);
-    }
-  }
-
-  &__liqours-container {
-    margin: 4rem auto 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      width: 200px;
-      margin: 1rem 2rem;
-      filter: drop-shadow(2px 4px 6px black);
-      transition: all 0.3s ease-out;
-
-      &:hover {
-        opacity: 0.85;
-        transform: scale(1.05);
-      }
-    }
-
-    p {
-      font-size: 1.35rem;
-      font-weight: bold;
-      font-family: $primary-fn;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-      color: #000;
-      text-align: center;
     }
   }
 }

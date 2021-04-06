@@ -8,6 +8,11 @@ import SingleFeaturedDrink from './SingleFeaturedDrink/SingleFeaturedDrink';
 import Footer from './Footer/Footer';
 import Logo from './Logo/Logo';
 import Navbar from './Navbar/Navbar';
+import Sidebar from './Sidebar/Sidebar';
+import Loading from './Loading/Loading';
+import SingleDrinkHeader from './SingleDrinkHeader/SingleDrinkHeader';
+import SingleIngredientPreview from './SingleIngredientPreview/SingleIngredientPreview';
+import Ingredients from './Ingredients/Ingredients';
 
 export {
   ScrollToTop,
@@ -20,4 +25,9 @@ export {
   Footer,
   Logo,
   Navbar,
+  Sidebar,
+  Loading,
+  SingleDrinkHeader,
+  SingleIngredientPreview,
+  Ingredients,
 };

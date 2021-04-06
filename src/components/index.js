@@ -13,6 +13,7 @@ import Loading from './Loading/Loading';
 import SingleDrinkHeader from './SingleDrinkHeader/SingleDrinkHeader';
 import SingleIngredientPreview from './SingleIngredientPreview/SingleIngredientPreview';
 import Ingredients from './Ingredients/Ingredients';
+import SingleIngredientHeader from './SingleIngredientHeader/SingleIngredientHeader';
 
 export {
   ScrollToTop,
@@ -30,4 +31,5 @@ export {
   SingleDrinkHeader,
   SingleIngredientPreview,
   Ingredients,
+  SingleIngredientHeader,
 };

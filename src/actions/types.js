@@ -7,3 +7,6 @@ export const SHOW_SIDEBAR = 'SHOW_SIDEBAR';
 // Single drink
 export const GET_SINGLE_DRINK = 'GET_SINGLE_DRINK';
 export const GET_RANDOM_DRINKS = 'GET_RANDOM_DRINKS';
+
+// Single ingredient
+export const GET_SINGLE_INGREDIENT = 'GET_SINGLE_INGREDIENT';

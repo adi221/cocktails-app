@@ -4,11 +4,13 @@ import thunkMiddleware from 'redux-thunk';
 import homeReducer from './reducers/home_reducer';
 import navReducer from './reducers/nav_reducer';
 import singleDrinkReducer from './reducers/single_drink_reducer';
+import singleIngredientReducer from './reducers/single_ingredient_reducer';
 
 const rootReducer = combineReducers({
   home: homeReducer,
   nav: navReducer,
   singleDrink: singleDrinkReducer,
+  singleIngredient: singleIngredientReducer,
 });
 
 const reduxDevtools =

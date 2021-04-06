@@ -29,6 +29,8 @@ $secondary-fn: 'Raleway', sans-serif;
 /* Font weight */
 $bold-fn: bold;
 $light-fn: light;
+/* Max width */
+$max-width: 1240px;
 
 *,
 *::after,
@@ -63,6 +65,7 @@ body {
 
 a {
   color: $white-clr;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: none;
@@ -71,6 +74,10 @@ a:hover {
 a:hover {
   border: none;
   color: $white-clr;
+}
+
+ul {
+  list-style-type: none;
 }
 
 p {

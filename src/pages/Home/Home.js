@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './Home.scss';
 import { connect } from 'react-redux';
 import { getCocktailsHome } from '../../actions/homeActions';
-import { HomeHeader, PopularDrinks } from '../../components';
+import { HomeHeader, PopularDrinks, FeaturedDrinks } from '../../components';
 
 const Home = props => {
   useEffect(() => {
@@ -14,6 +14,7 @@ const Home = props => {
     <div className='home-page'>
       <HomeHeader />
       <PopularDrinks drinks={props.popularDrinks} />
+      <FeaturedDrinks drinks={props.featuredDrinks} />
     </div>
   );
 };

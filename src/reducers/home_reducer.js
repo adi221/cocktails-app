@@ -9,7 +9,7 @@ const home_reducer = (state = initialState, action) => {
   if (action.type === GET_COCKTAILS_HOME) {
     const { feturedDrinks, popularDrinks } = action.payload;
     return {
-      ...initialState,
+      ...state,
       popular_drinks: popularDrinks,
       featured_drinks: feturedDrinks,
     };

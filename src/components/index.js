@@ -1,5 +1,5 @@
 import ScrollToTop from './ScrollToTop/ScrollToTop';
-import HomeHeader from './HomeHeader/HomeHeader';
+import PageHeader from './PageHeader/PageHeader';
 import PopularDrinks from './PopularDrinks/PopularDrinks';
 import Banner from './Banner/Banner';
 import SingleDrinkPreview from './SingleDrinkPreview/SingleDrinkPreview';
@@ -14,10 +14,11 @@ import SingleDrinkHeader from './SingleDrinkHeader/SingleDrinkHeader';
 import SingleIngredientPreview from './SingleIngredientPreview/SingleIngredientPreview';
 import Ingredients from './Ingredients/Ingredients';
 import SingleIngredientHeader from './SingleIngredientHeader/SingleIngredientHeader';
+import Menu from './Menu/Menu';
 
 export {
   ScrollToTop,
-  HomeHeader,
+  PageHeader,
   PopularDrinks,
   Banner,
   SingleDrinkPreview,
@@ -32,4 +33,5 @@ export {
   SingleIngredientPreview,
   Ingredients,
   SingleIngredientHeader,
+  Menu,
 };

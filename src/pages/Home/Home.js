@@ -3,7 +3,7 @@ import './Home.scss';
 import { connect } from 'react-redux';
 import { getCocktailsHome } from '../../actions/homeActions';
 import {
-  HomeHeader,
+  PageHeader,
   PopularDrinks,
   FeaturedDrinks,
   Loading,
@@ -23,7 +23,7 @@ const Home = props => {
 
   return (
     <div className='home-page'>
-      <HomeHeader />
+      <PageHeader title='Cocktails' />
       <Ingredients ingredients={liqours} title='Popular Liqours' />
       <PopularDrinks drinks={props.popularDrinks} />
       <FeaturedDrinks drinks={props.featuredDrinks} title='Featured Drinks' />

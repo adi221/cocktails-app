@@ -10,3 +10,7 @@ export const GET_RANDOM_DRINKS = 'GET_RANDOM_DRINKS';
 
 // Single ingredient
 export const GET_SINGLE_INGREDIENT = 'GET_SINGLE_INGREDIENT';
+
+// Drinks
+export const GET_DRINKS = 'GET_DRINKS';
+export const HANDLE_MENU_QUERY = 'HANDLE_MENU_QUERY';

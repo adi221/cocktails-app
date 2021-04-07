@@ -1,0 +1,58 @@
+@import '../../index.scss';
+
+.menu-header {
+  max-width: 1170px;
+  width: 90vw;
+  margin: 3rem auto 2rem;
+  display: flex;
+  justify-content: space-around;
+
+  &__form-search {
+    display: flex;
+
+    input {
+      padding: 0.5rem 1rem;
+      border: 4px solid $primary-clr;
+      font-family: $primary-fn;
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 8px;
+      outline: none;
+      margin-right: 0.5rem;
+
+      &::placeholder {
+        font-family: inherit;
+        font-weight: bold;
+        color: #858585;
+      }
+    }
+
+    button {
+      font-family: $primary-fn;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      color: $secondary-clr;
+      background-color: $primary-clr;
+      text-transform: uppercase;
+      border-radius: 8px;
+      font-size: 18px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $secondary-clr;
+        color: $primary-clr;
+      }
+    }
+  }
+  &__form-filter {
+    display: flex;
+
+    h3 {
+      font-family: $primary-fn;
+      text-transform: uppercase;
+    }
+  }
+}

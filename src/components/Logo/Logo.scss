@@ -1,0 +1,26 @@
+@import '../../index.scss';
+
+.logo {
+  background-color: $primary-clr;
+  padding: 1.3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 130px;
+  align-items: center;
+  border: 7px double $secondary-clr;
+  z-index: 5;
+
+  &__transform-up {
+    margin-top: -2.5rem;
+  }
+
+  &__span {
+    color: $secondary-clr;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    font-family: $primary-fn;
+    font-size: 1.2rem;
+  }
+}

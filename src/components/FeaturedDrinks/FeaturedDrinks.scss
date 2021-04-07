@@ -1,0 +1,13 @@
+@import '../../index.scss';
+
+.featured-drinks {
+  &__container {
+    margin: 4rem auto 3rem;
+    max-width: $max-width;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

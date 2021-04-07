@@ -1,0 +1,19 @@
+@import '../../index.scss';
+
+.menu {
+  &__container {
+    margin: 3rem auto;
+    max-width: $max-width;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      margin: 3rem 0;
+      font-family: $primary-fn;
+      text-align: center;
+    }
+  }
+}

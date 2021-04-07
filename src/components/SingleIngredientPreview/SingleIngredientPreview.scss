@@ -1,0 +1,25 @@
+@import '../../index.scss';
+
+.single-ingredient-preview {
+  img {
+    width: 200px;
+    margin: 1rem 2rem;
+    filter: drop-shadow(2px 4px 6px black);
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      opacity: 0.85;
+      transform: scale(1.05);
+    }
+  }
+
+  p {
+    font-size: 1.35rem;
+    font-weight: bold;
+    font-family: $primary-fn;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #000;
+    text-align: center;
+  }
+}

@@ -1,0 +1,59 @@
+@import '../../index.scss';
+
+.footer {
+  padding: 50px 0;
+  background-color: $secondary-clr;
+
+  &__container {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &-links {
+      li {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        font-family: $primary-fn;
+        font-size: 1.15rem;
+        a {
+          color: $primary-clr;
+
+          &:hover {
+            color: #c5c5c5;
+          }
+        }
+      }
+    }
+
+    &-social {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 0.5rem;
+
+      svg {
+        color: $primary-clr;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: #c5c5c5;
+        }
+      }
+    }
+
+    &-copyright {
+      font-size: 14px;
+      color: $white-clr;
+      transition: all 0.3s linear;
+
+      a:hover {
+        color: #c5c5c5;
+      }
+    }
+  }
+}

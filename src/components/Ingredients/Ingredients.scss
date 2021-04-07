@@ -1,0 +1,11 @@
+@import '../../index.scss';
+
+.ingredients {
+  &__container {
+    margin: 4rem auto 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

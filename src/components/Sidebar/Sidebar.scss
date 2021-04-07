@@ -1,0 +1,32 @@
+@import '../../index.scss';
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  background-color: $secondary-clr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  a {
+    color: $primary-clr;
+    width: 100%;
+    padding: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $primary-fn;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.4rem;
+
+    &:hover {
+      color: $secondary-clr;
+      background-color: $primary-clr;
+    }
+  }
+}

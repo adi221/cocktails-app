@@ -1,0 +1,132 @@
+@import '../../index.scss';
+
+.nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8rem;
+
+  &-top {
+    width: 100%;
+    height: 3rem;
+    background-color: $secondary-clr;
+
+    &__social {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        padding-top: 0.5rem;
+        margin: 0 1rem;
+
+        svg {
+          color: $primary-clr;
+          font-size: 1.4rem;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: #c5c5c5;
+          }
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    width: 100%;
+    height: 5rem;
+    background-color: $primary-clr;
+
+    &__center {
+      max-width: 1170px;
+      width: 90vw;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-toggle {
+        background-color: transparent;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        z-index: 100;
+        margin-bottom: 1rem;
+        outline: none;
+
+        .line {
+          transition: all 0.5s ease-in-out;
+          width: 28px;
+          height: 3px;
+          margin: 5px 0;
+          background-color: $secondary-clr;
+          z-index: 100;
+
+          &__one {
+            background-color: $primary-clr;
+            transform: rotate(45deg) translate(5px, 5px);
+          }
+          &__two {
+            opacity: 0;
+          }
+          &__three {
+            background-color: $primary-clr;
+            transform: rotate(-45deg) translate(7px, -6px);
+          }
+        }
+      }
+
+      &-links {
+        display: none;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        li {
+          margin-left: 1rem;
+          a {
+            color: $secondary-clr;
+            background-color: $primary-clr;
+            padding: 0.5rem 1.2rem;
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: $primary-fn;
+            font-size: 1.4rem;
+            transition: all 0.5s ease-in-out;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            &:hover {
+              color: $primary-clr;
+              background-color: $secondary-clr;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 824px) {
+  .nav {
+    &-top {
+      &__social {
+        li {
+          margin: 0 2rem;
+        }
+      }
+    }
+    &-bottom {
+      &__center {
+        &-toggle {
+          display: none;
+        }
+        &-links {
+          display: flex;
+        }
+      }
+    }
+  }
+}

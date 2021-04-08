@@ -1,7 +1,7 @@
-// Home actions
+// Home
 export const GET_COCKTAILS_HOME = 'GET_COCKTAILS';
 
-// Nav actions
+// Nav
 export const SHOW_SIDEBAR = 'SHOW_SIDEBAR';
 
 // Single drink
@@ -14,3 +14,7 @@ export const GET_SINGLE_INGREDIENT = 'GET_SINGLE_INGREDIENT';
 // Drinks
 export const GET_DRINKS = 'GET_DRINKS';
 export const HANDLE_MENU_QUERY = 'HANDLE_MENU_QUERY';
+export const HANDLE_MENU_FILTER = 'HANDLE_MENU_FILTER';
+export const GET_FILTER_OPTIONS = 'GET_FILTER_OPTIONS';
+export const HANDLE_FILTER_OPTIONS = 'HANDLE_FILTER_OPTIONS';
+export const UPDATE_MENU = 'UPDATE_MENU';

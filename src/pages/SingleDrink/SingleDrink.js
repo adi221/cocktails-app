@@ -10,6 +10,7 @@ import {
   SingleDrinkHeader,
   Ingredients,
   FeaturedDrinks,
+  Loading,
 } from '../../components';
 
 const SingleDrink = props => {
@@ -34,6 +35,10 @@ const SingleDrink = props => {
         src: `https://www.thecocktaildb.com/images/ingredients/${props.singleDrink[key]}.png`,
       });
     }
+  }
+
+  if (Object.keys(props.singleDrink).length === 0) {
+    return <Loading />;
   }
 
   return (

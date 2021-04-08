@@ -17,7 +17,7 @@ const Home = props => {
     // eslint-disable-next-line
   }, []);
 
-  if (props.popularDrinks.length === 0 || props.featuredDrinks.length === 0) {
+  if (props.popularDrinks.length === 0) {
     return <Loading />;
   }
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Drinks.scss';
 import { connect } from 'react-redux';
-import { PageHeader, Menu } from '../../components';
+import { PageHeader, Menu, Loading } from '../../components';
 // import { GET_DRINKS, HANDLE_MENU_QUERY } from '../../actions/types';
 import { getDrinks } from '../../actions/drinksActions';
 
@@ -15,10 +15,14 @@ const Drinks = props => {
     // eslint-disable-next-line
   }, [props.query]);
 
+  if (!props.menu) {
+    return <Loading />;
+  }
+
   return (
     <div className='drinks-page'>
       <PageHeader title='Menu' />
-      <Menu menu={props.menu} title='Cocktails Menu' />
+      <Menu title='Cocktails Menu' />
     </div>
   );
 };

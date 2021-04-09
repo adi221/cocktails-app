@@ -1,0 +1,37 @@
+@import '../../index.scss';
+
+.pagination {
+  max-width: 1170px;
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+
+  &__btn {
+    padding: 10px 20px;
+    background-color: $primary-clr;
+    color: $secondary-clr;
+    border: 1px solid $secondary-clr;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: $primary-fn;
+
+    &:hover:not([disabled]) {
+      color: $primary-clr;
+      background-color: $secondary-clr;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    margin-left: -3rem;
+  }
+}

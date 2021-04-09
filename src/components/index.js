@@ -16,6 +16,7 @@ import Ingredients from './Ingredients/Ingredients';
 import SingleIngredientHeader from './SingleIngredientHeader/SingleIngredientHeader';
 import Menu from './Menu/Menu';
 import MenuHeader from './MenuHeader/MenuHeader';
+import PaginationButtons from './PaginationButtons/PaginationButtons';
 
 export {
   ScrollToTop,
@@ -36,4 +37,5 @@ export {
   SingleIngredientHeader,
   Menu,
   MenuHeader,
+  PaginationButtons,
 };

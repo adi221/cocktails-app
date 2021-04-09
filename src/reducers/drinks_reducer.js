@@ -5,11 +5,15 @@ import {
   GET_FILTER_OPTIONS,
   HANDLE_FILTER_OPTIONS,
   UPDATE_MENU,
+  CHANGE_PAGE,
 } from '../actions/types';
+import { paginate } from '../utils/helpers';
 
 const initialState = {
   original_menu: [],
   menu: [],
+  paginated_menu: [],
+  page: 0,
   query: '',
   filter: 'None',
   filter_options: [],
@@ -18,10 +22,13 @@ const initialState = {
 
 const drinks_reducer = (state = initialState, action) => {
   if (action.type === GET_DRINKS) {
+    const newMenu = action.payload.drinks === null ? [] : action.payload.drinks;
     return {
       ...state,
-      menu: action.payload.drinks,
-      original_menu: action.payload.drinks,
+      page: 0,
+      menu: newMenu,
+      original_menu: newMenu,
+      paginated_menu: paginate(newMenu),
     };
   }
   if (action.type === HANDLE_MENU_QUERY) {
@@ -71,7 +78,16 @@ const drinks_reducer = (state = initialState, action) => {
     } else {
       newMenu = newMenu.filter(drink => drink[optionType] === value);
     }
-    return { ...state, menu: newMenu };
+    return {
+      ...state,
+      menu: newMenu,
+      paginated_menu: paginate(newMenu),
+      page: 0,
+    };
+  }
+  if (action.type === CHANGE_PAGE) {
+    let newPage = action.payload === 'next' ? state.page + 1 : state.page - 1;
+    return { ...state, page: newPage };
   }
   return state;
 };

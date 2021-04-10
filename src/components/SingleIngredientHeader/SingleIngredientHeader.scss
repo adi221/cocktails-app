@@ -23,5 +23,31 @@
       font-size: 3rem;
       margin-bottom: 2rem;
     }
+
+    button {
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      cursor: pointer;
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      margin: 1rem auto 0;
+      background-color: $primary-clr;
+      transition: all 0.3s ease-in-out;
+
+      svg {
+        color: $secondary-clr;
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        background-color: $secondary-clr;
+      }
+      &:hover svg {
+        color: $primary-clr;
+      }
+    }
   }
 }

@@ -10,6 +10,7 @@
   &__form-search {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 
     input {
       padding: 0.5rem 1rem;
@@ -50,6 +51,7 @@
   }
   &__form-filter {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
     h3 {
@@ -69,6 +71,20 @@
       border-radius: 8px;
       outline: none;
       margin-right: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .menu-header {
+    flex-direction: column;
+    justify-content: center;
+
+    &__form-filter {
+      select:nth-of-type(2) {
+        margin-top: 0.4rem;
+        margin-left: 4.8rem;
+      }
     }
   }
 }

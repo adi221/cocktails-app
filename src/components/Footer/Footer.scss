@@ -57,3 +57,14 @@
     }
   }
 }
+
+@media (max-width: 475px) {
+  .footer {
+    &__container {
+      &-social,
+      &-copyright {
+        display: none;
+      }
+    }
+  }
+}

@@ -51,3 +51,21 @@
     }
   }
 }
+
+@media (max-width: 1100px) {
+  .single-ingredient-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    img {
+      max-width: 90%;
+      width: 400px;
+      margin: 0 auto;
+    }
+  }
+}

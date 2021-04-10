@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SingleIngredientHeader.scss';
 import { FaChevronDown } from 'react-icons/fa';
 import { connect } from 'react-redux';
@@ -12,6 +12,18 @@ const SingleIngredientHeader = ({ ingredient, isShowModal, showModal }) => {
   if (description && description.length > 600) {
     showMore = true;
   }
+
+  const turnOffShowMore = () => {
+    console.log('workis');
+    if (mq.matches) {
+      showMore = false;
+    }
+  };
+  const mq = window.matchMedia('(max-width: 825px)');
+
+  useEffect(() => {
+    mq.addListener(turnOffShowMore);
+  }, []);
 
   return (
     <div className='single-ingredient-header'>
